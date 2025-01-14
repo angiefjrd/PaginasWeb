@@ -1,0 +1,161 @@
+body {
+    background-color: #121212; 
+    color: #e0e0e0; 
+    font-family: 'Roboto', sans-serif; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+/* Menú lateral */
+.sidebar {
+    position: fixed;
+    top: 0;
+    position: static; 
+    width: 200px;
+    height: 100%;
+    border-left: 1px solid #444;
+    background-color: #222;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.sidebar h3 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 5px;
+    text-align: center;
+}
+
+.sidebar ul li a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+
+/* Contenido */
+#content {
+    padding: 20px;
+    width: calc(100% - 220px);
+    margin-left: 220px;
+    max-width: 1200px;
+}
+
+/* Botones */
+button {
+    background-color: #3a3a3a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Contenido principal */
+div[id^="intro-text"],
+div[id^="Encabezado"],
+div[id^="Listas"],
+div[id^="ListasDesordenadas"],
+div[id^="Enlaces"],
+div[id^="Imagenes"],
+div[id^="Formularios"],
+div[id^="Semantico"],
+div[id^="Ejemplo"],
+div[id^="Integracion"],
+div[id^="Selectores"],
+div[id^="Propiedades"],
+div[id^="Modelo"],
+div[id^="Elementos"],
+div[id^="Div"],
+div[id^="Widht"] {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto; 
+    font-size: 16px;
+    text-align: center; 
+}
+
+
+div[id^="intro-text"] pre,
+div[id^="Encabezado"] pre,
+div[id^="Listas"] pre,
+div[id^="ListasDesordenadas"] pre,
+div[id^="Enlaces"] pre,
+div[id^="Imagenes"] pre,
+div[id^="Formularios"] pre,
+div[id^="Semantico"] pre,
+div[id^="Ejemplo"] pre,
+div[id^="Integracion"] pre,
+div[id^="Selectores"] pre,
+div[id^="Propiedades"] pre,
+div[id^="Modelo"] pre,
+div[id^="Elementos"] pre,
+div[id^="Div"] pre,
+div[id^="Widht"] pre {
+    background-color: #292929;
+    padding: 15px;
+    color: #b0b0b0;
+    border-radius: 5px;
+    text-align: left; 
+    overflow-x: auto; 
+    font-size: 14px;
+    margin: 10px auto; 
+    max-width: 95%; 
+}
+.sidebar ul li a {
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    transform: translateX(5px);
+}
